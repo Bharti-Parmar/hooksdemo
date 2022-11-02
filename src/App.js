@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Counter from './components/Counter';
 import InputEvent from './components/InputEvent';
 import UseStateObject from './components/UseStateObject';
+import OnOffLineConcept from './components/OnOffLineConcept';
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
       <Counter />
       <InputEvent />
       <UseStateObject />
+      <OnOffLineConcept />
     </div>
   );
 }

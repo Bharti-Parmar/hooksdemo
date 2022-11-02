@@ -1,18 +1,28 @@
 import React, { useState, useEffect } from 'react'
 
 function OnOffLineConcept() {
-    const [status, setStatus] = useState();
+    // const [status, setStatus] = useState('Loading...');
+    const [seconds, setSeconds] = useState(0);
+
+    // useEffect(() => {
+    //     const timer = setInterval(() => {
+    //         console.log("time interval completed");
+    //         setStatus("loaded!");
+    //     }, 5000);
+    //     return clearInterval(timer);
+    // },[])
 
     useEffect(() => {
-        const timer = setTimeout(() => {
-            setStatus();
-        }, 1000);
-        return clearTimeout(timer);
-    })
+        const timer = setInterval(() => {
+            setSeconds(seconds => seconds + 1);
+        },1000)
+        return () => clearInterval(timer);
+    },[])
 
     return (
         <div>
-            <span onShow={status} onChange={e => setStatus(e)}>Loading...</span>
+            {/* <h3>{status}</h3> */}
+           <h3>4. Time in Seconds: {seconds}</h3> 
         </div>
     )
 }
