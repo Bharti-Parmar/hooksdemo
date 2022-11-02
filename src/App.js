@@ -5,6 +5,7 @@ import Counter from './components/Counter';
 import InputEvent from './components/InputEvent';
 import UseStateObject from './components/UseStateObject';
 import OnOffLineConcept from './components/OnOffLineConcept';
+import SetTimeInterval from './components/SetTimeInterval';
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
       <InputEvent />
       <UseStateObject />
       <OnOffLineConcept />
+      <SetTimeInterval />
     </div>
   );
 }
