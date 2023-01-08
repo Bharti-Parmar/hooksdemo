@@ -1,21 +1,20 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from "react";
 
 function OnOffLineConcept() {
-    // const [status, setStatus] = useState('Loading...');
+  const [status, setStatus] = useState(false);
+  const [value, setValue] = useState();
 
-    // useEffect(() => {
-    //     const timer = setInterval(() => {
-    //         console.log("time interval completed");
-    //         setStatus("loaded!");
-    //     }, 5000);
-    //     return clearInterval(timer);
-    // },[])
+  function clickMe() {
+    setStatus(true);
+    setValue("Online");
+  }
 
-    return (
-        <div>
-            {/* <h3>{status}</h3> */}
-        </div>
-    )
+  return (
+    <div>
+      {status ? <h4>{value}</h4> : <h4>Offline</h4>}
+      <button onClick={() => clickMe()}>click</button>
+    </div>
+  );
 }
 
-export default OnOffLineConcept
+export default OnOffLineConcept;
