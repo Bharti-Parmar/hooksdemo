@@ -1,3 +1,5 @@
+import React from 'react'
+import MemoDemo from './components/MemoDemo';
 // import "./styles.css";
 // import HigherOrder from "./components/HigherOrder";
 // import HOC from "./components/HOC";
@@ -11,17 +13,19 @@
 // import EffectWithNoDependency from "./components/EffectWithNoDependency";
 // import DataFetch from "./components/DataFetch";
 // import AxiosDemo from "./components/AxiosDemo";
-
-import ContextCompT from "./components/containers/ContextCompT";
-import ContextDemo from "./components/ContextDemo";
+// import ContextCompT from "./components/containers/ContextCompT";
+// import ContextDemo from "./components/ContextDemo";
+// import CallBackDemo from "./components/CallBackDemo";
 
 // const NewComp = HigherOrder(HOC);
 
 export default function App() {
   return (
     <div className="App">
-      <ContextDemo />
-      <ContextCompT />
+      <MemoDemo />
+      {/* <CallBackDemo /> */}
+      {/* <ContextDemo />
+      <ContextCompT /> */}
       {/* <AxiosDemo /> */}
       {/* <DataFetch /> */}
       {/* <EffectWithNoDependency /> */}
