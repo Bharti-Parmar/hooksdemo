@@ -1,6 +1,5 @@
-import React from 'react'
-import MemoDemo from './components/MemoDemo';
 // import "./styles.css";
+import React from 'react'
 // import HigherOrder from "./components/HigherOrder";
 // import HOC from "./components/HOC";
 // import CounterComp from "./components/Counter";
@@ -15,17 +14,26 @@ import MemoDemo from './components/MemoDemo';
 // import AxiosDemo from "./components/AxiosDemo";
 // import ContextCompT from "./components/containers/ContextCompT";
 // import ContextDemo from "./components/ContextDemo";
+// import ReducerDemo from "./components/reducerDemo";
+// import ReducerTwoDemo from './components/ReducerTwoDemo';
+// import UseStateObject from './components/UseStateObject';
+import UserFormValueOnAlert from './components/UserFormValueOnAlert';
 // import CallBackDemo from "./components/CallBackDemo";
+// import Form from './components/form';
 
 // const NewComp = HigherOrder(HOC);
 
 export default function App() {
   return (
     <div className="App">
-      <MemoDemo />
+      {/* <Form /> */}
+      {/* <ReducerDemo /> */}
+      {/* <UseStateObject /> */}
+      <UserFormValueOnAlert />
+      {/* <ReducerTwoDemo /> */}
       {/* <CallBackDemo /> */}
-      {/* <ContextDemo />
-      <ContextCompT /> */}
+      {/* <ContextDemo /> */}
+      {/* <ContextCompT /> */}
       {/* <AxiosDemo /> */}
       {/* <DataFetch /> */}
       {/* <EffectWithNoDependency /> */}
